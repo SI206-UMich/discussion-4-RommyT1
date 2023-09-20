@@ -51,7 +51,10 @@ def area(self):
     # Otherwise, it returns the perimeter of the rectangle.
 
     # YOUR CODE HERE
-    
+    def perimeter(self):
+        if not self.verify_input():
+            return "Invalid Input"
+        return 2 * (self.width + self.height)
 
 
 def main():
